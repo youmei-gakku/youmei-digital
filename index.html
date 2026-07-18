@@ -1,5 +1,152 @@
-<script>
-  // 最新のディレクトリ名を指定
-  const latestIssue = '2607';
-  window.location.replace('./' + latestIssue + '/');
-</script>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ポータル画面は検索されても問題ない（むしろ見つけてもらう）ためnoindexは外すか、必要に応じて追加してください -->
+    <title>陽明学区 デジタル回覧板ポータル</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        
+        /* ふわっと浮き上がるアニメーション */
+        .float-anim { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* 脈打つようなボタンアニメーション */
+        .pulse-soft { animation: pulse-soft 2s infinite; }
+        @keyframes pulse-soft {
+            0% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(234, 88, 12, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed overflow-x-hidden selection:bg-orange-200">
+
+    <!-- 幾何学的な背景パターンで洗練された印象を演出 -->
+    <div class="fixed inset-0 -z-10 bg-[radial-gradient(#fed7aa_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
+    <div class="fixed top-0 left-0 w-full h-64 bg-gradient-to-b from-orange-100 to-transparent -z-10"></div>
+
+    <main class="max-w-md mx-auto bg-white min-h-screen shadow-2xl relative flex flex-col">
+        
+        <!-- ヘッダーエリア -->
+        <header class="pt-12 pb-8 px-6 text-center relative">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-orange-50 rounded-full mb-4 shadow-inner">
+                <span class="text-4xl float-anim">📱</span>
+            </div>
+            <p class="text-orange-600 font-bold text-sm tracking-widest mb-2">YOMEI DIGITAL CIRCULAR</p>
+            <h1 class="text-3xl font-black text-gray-900 leading-tight tracking-tight mb-3">
+                陽明学区<br>デジタル回覧板
+            </h1>
+            <p class="text-gray-500 font-medium text-sm">
+                いつでも、どこでも、街の最新情報を。
+            </p>
+        </header>
+
+        <!-- 最新号への特大ボタン -->
+        <section class="px-6 mb-10 z-10">
+            <!-- リンク先は毎月ここだけを書き換えます（現在は2607フォルダの最新号） -->
+            <a href="./2607/index.html" 
+               class="pulse-soft block w-full bg-gradient-to-br from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white text-center rounded-2xl p-6 shadow-[0_10px_25px_-5px_rgba(234,88,12,0.5)] transition-all active:scale-95 group relative overflow-hidden">
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <span class="block text-orange-100 font-bold text-sm mb-1 tracking-wider">今月のお知らせ</span>
+                <span class="block text-2xl font-black mb-1 flex items-center justify-center gap-2">
+                    最新号を読む <span class="group-hover:translate-x-1 transition-transform">▶</span>
+                </span>
+                <span class="block text-sm font-medium opacity-90">タップして回覧板を開く</span>
+            </a>
+        </section>
+
+        <!-- ブックマーク・ホーム画面追加のお願い -->
+        <section class="px-6 mb-10">
+            <div class="bg-gray-50 border-2 border-gray-100 rounded-2xl p-6 relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 text-6xl opacity-5">📌</div>
+                <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span class="text-xl">⭐️</span> このページを保存してください
+                </h2>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                    次回からワンタップで最新号が読めるよう、この画面を<strong class="text-gray-900">「ホーム画面に追加」</strong>または<strong class="text-gray-900">「ブックマーク」</strong>にお願いします。
+                </p>
+                
+                <!-- OS別の簡易ガイド -->
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-xl">🍎</div>
+                        <div class="text-xs text-gray-600 leading-relaxed">
+                            <span class="font-bold text-gray-800">iPhone (Safari) の方：</span><br>
+                            画面下の「共有アイコン(四角から上矢印)」を押し、「ホーム画面に追加」を選択。
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-xl">🤖</div>
+                        <div class="text-xs text-gray-600 leading-relaxed">
+                            <span class="font-bold text-gray-800">Android (Chrome) の方：</span><br>
+                            画面右上の「メニュー(︙)」を押し、「ホーム画面に追加」を選択。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- バックナンバー＆リンク集 -->
+        <section class="px-6 mb-auto">
+            <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Menu</h3>
+            <ul class="space-y-3">
+                <li>
+                    <a href="./2606/index.html" class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400">📁</span>
+                            <span class="font-bold text-gray-700 text-sm">過去の回覧板 (第3号・夏特大号)</span>
+                        </div>
+                        <span class="text-gray-300">▶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./2605/index.html" class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400">📁</span>
+                            <span class="font-bold text-gray-700 text-sm">過去の回覧板 (第2号・5月号)</span>
+                        </div>
+                        <span class="text-gray-300">▶</span>
+                    </a>
+                </li>
+                <li>
+                    <!-- Bosaiブックのリンクをルート直下に修正 -->
+                    <a href="./bosai.html" class="flex items-center justify-between p-4 bg-white border border-blue-100 rounded-xl hover:bg-blue-50 transition-colors mt-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-blue-500">🚨</span>
+                            <span class="font-bold text-blue-800 text-sm">なごやBosaiブック デジタル版</span>
+                        </div>
+                        <span class="text-blue-300">▶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./join.html" class="flex items-center justify-between p-4 bg-white border border-orange-100 rounded-xl hover:bg-orange-50 transition-colors mt-2">
+                        <div class="flex items-center gap-3">
+                            <span class="text-orange-500">🤝</span>
+                            <span class="font-bold text-orange-800 text-sm">町内会へのご加入案内</span>
+                        </div>
+                        <span class="text-orange-300">▶</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- フッター -->
+        <footer class="mt-12 py-8 bg-gray-900 text-center rounded-b-3xl mt-12">
+            <p class="text-gray-400 text-xs tracking-wider mb-2">YOMEI COMMUNITY DX PROJECT</p>
+            <p class="text-gray-500 text-[10px]">
+                &copy; 令和8年 陽明学区連絡協議会・地域福祉推進協議会
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
