@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陽明学区 デジタル回覧板 - 令和8年第4号(8月号)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* アコーディオンの矢印アニメーション用 */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        /* シニア層の視認性を高めるためのベース設定 */
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 text-lg leading-relaxed pb-20">
+
+    <!-- メインコンテナ（スマホ最適化サイズ） -->
+    <main class="max-w-2xl mx-auto bg-white min-h-screen shadow-md rounded-b-3xl overflow-hidden">
+        
+        <!-- ヘッダーエリア -->
+        <header class="p-5 pb-0">
+            <div class="flex flex-wrap gap-2 mb-3">
+                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-bold shadow-sm">#プレミアム商品券</span>
+                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-bold shadow-sm">#緊急防犯アラート</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold shadow-sm">#交通規制予告</span>
+            </div>
+            <div class="flex justify-between items-end border-b-2 border-orange-200 pb-3">
+                <h1 class="text-2xl font-black text-gray-900 leading-tight">
+                    <span class="text-orange-600 text-base block mb-1">陽明学区 デジタル回覧板</span>
+                    令和8年 第4号 (8月号)
+                </h1>
+                <div class="text-sm font-bold text-gray-500 bg-gray-100 px-3 py-2 rounded-lg flex items-center gap-1">
+                    <span>⏱️</span>約5分で読めます
+                </div>
+            </div>
+        </header>
+
+        <!-- トップ画像 (夏本番・防災・お得感を連想させるプレースホルダー) -->
+        <div class="mt-4 px-4">
+            <img src="./top-image.png" alt="夏の青空と地域活動を象徴する爽やかなイラスト" class="w-full h-56 object-cover rounded-2xl shadow-sm bg-blue-50" onerror="this.src='https://placehold.co/800x400/e0f2fe/0284c7?text=Yomei+August+Issue'">
+        </div>
+
+        <!-- リード文 -->
+        <div class="p-6">
+            <p class="text-gray-700 font-medium">
+                連日厳しい暑さが続いておりますが、皆様いかがお過ごしでしょうか。今月は、家計に大助かりな<strong class="text-orange-600">「プレミアム商品券」</strong>の申込期限(8/14)や、新しく完成した<strong class="text-orange-600">「消防団詰所の内覧会」</strong>など、注目のニュースが目白押しです。<br>
+                一方で、近隣で激増している<strong class="text-red-600">「空き巣被害」</strong>や、来月予定されている聖火リレーに伴う<strong class="text-red-600">「交通規制」</strong>など、暮らしの安全に直結する重要情報も掲載しています。必ず最後までご確認ください。
+            </p>
+        </div>
+
+        <!-- セクション1: 今月のツートップ（超お得＆地域イベント） -->
+        <section class="px-4 mb-8">
+            <div class="bg-gradient-to-br from-orange-50 to-yellow-100 border border-orange-200 rounded-2xl p-5 shadow-sm relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 text-6xl opacity-20">🎁</div>
+                <h2 class="text-xl font-bold text-orange-900 mb-4 flex items-center gap-2">
+                    <span class="text-2xl">📢</span> 今すぐチェック！注目の2大ニュース
+                </h2>
+                
+                <!-- 名古屋市プレミアム付き電子商品券 -->
+                <div class="bg-white rounded-xl p-4 mb-4 shadow-sm border-l-4 border-yellow-500">
+                    <span class="inline-block bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded mb-2">8/14(金) 申込締切！</span>
+                    <h3 class="font-bold text-gray-900 flex items-center gap-2 text-lg mb-1">
+                        <span>📱</span> プレミアム率30%！<br>名古屋市電子商品券 申込開始
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-3">
+                        今年の商品は<span class="font-bold text-red-600">「電子のみ」</span>での発行です。1万円の購入で1万3千円分（最大5口まで）のお買い物ができる大チャンス！申込者全員が購入できます。
+                    </p>
+                    <div class="text-sm text-gray-600 bg-yellow-50 p-3 rounded-lg mb-3">
+                        <span class="font-bold block mb-1">【重要】申込には以下が必要です</span>
+                        ①マイナンバーカード（または運転免許証）<br>②NFC(IC読取)対応のスマホ
+                    </div>
+                    <a href="https://shouhinken.city.nagoya.jp/" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-2 w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-4 rounded-xl text-base shadow-sm transition-transform active:scale-95">
+                        特設サイトで詳細を見る・申し込む <span>🔗</span>
+                    </a>
+                </div>
+
+                <!-- 陽明消防団 新詰所 内覧会 -->
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-orange-500">
+                    <span class="inline-block bg-orange-100 text-orange-700 text-xs font-bold px-2 py-0.5 rounded mb-2">陽明学区居住者様 限定</span>
+                    <h3 class="font-bold text-gray-900 flex items-center gap-2 text-lg mb-1">
+                        <span>🚒</span> 陽明消防団 新詰所<br>完成記念 特別内覧会
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-1"><span class="font-bold">日時：</span>8月23日(日) 10:00〜11:30</p>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-3"><span class="font-bold">場所：</span>密柑山公園となり (ひばり荘南西)</p>
+                    <p class="text-sm font-bold text-orange-700 bg-orange-50 p-3 rounded-lg">
+                        新しい防災の拠点が完成しました！先着100名様に【美濃忠の紅白お菓子】をプレゼント🎁（※駐車場はありません。徒歩でお越しください）
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション2: 【最優先】緊急防犯アラート -->
+        <section class="px-4 mb-8">
+            <div class="bg-red-50 border-2 border-red-500 rounded-2xl p-5 shadow-sm relative overflow-hidden">
+                <h2 class="text-xl font-bold text-red-700 mb-3 flex items-center gap-2">
+                    <span class="text-3xl animate-pulse">🚨</span> 【緊急警告】空き巣被害が激増中！
+                </h2>
+                <div class="bg-white rounded-xl p-4">
+                    <p class="text-base text-gray-800 font-bold mb-2">
+                        現在、瑞穂区の近隣管内で<span class="text-red-600 text-xl">「住宅対象の窃盗犯（空き巣）」</span>の被害が激増しています。
+                    </p>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                        犯人は徒歩や自転車、自動車で事前に下見に来ている可能性があります。少しの外出でも、在宅時でも、<span class="font-bold underline decoration-red-500 decoration-2">必ず施錠を徹底</span>してください。
+                    </p>
+                    <div class="bg-red-100 text-red-800 text-sm font-bold p-3 rounded-lg text-center">
+                        不審者を見かけたら、迷わず【110番】通報をお願いします！
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション3: 地域全体への【超重要】なお知らせ（交通・防災） -->
+        <section class="px-4 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 border-b-2 border-gray-100 pb-2">
+                <span>🚧</span> 交通規制・防災の重要なお知らせ
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- 聖火リレー交通規制 -->
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm">
+                    <h3 class="font-bold text-blue-800 text-lg mb-2 flex items-center gap-2">
+                        <span>🔥</span> 9/16(水) 聖火リレーに伴う<br>夕方の交通規制にご注意！
+                    </h3>
+                    <p class="text-base text-gray-800 font-bold mb-1">規制時間帯：9月16日(水) 16:25頃〜17:40頃</p>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                        アジア競技大会の聖火リレーに伴い、<span class="font-bold">桜山〜瑞穂区役所〜瑞穂運動場西</span>周辺にかけてのコースが通行止めとなります。帰宅や買い物のラッシュ時間帯と重なるため、車や自転車でのお出かけは極力ご遠慮ください。
+                    </p>
+                    <p class="text-xs font-bold text-blue-600 bg-white p-2 rounded">
+                        ※歩行者・自転車の横断も原則できません。詳細な迂回ルート図は、ページ下部の「回覧板原本(PDF)」1ページをご確認ください。
+                    </p>
+                </div>
+
+                <!-- 全市一斉防災訓練 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                    <h3 class="font-bold text-gray-900 text-base mb-2 flex items-center gap-2">
+                        <span>📱</span> 9/6(日) 朝8:30 全市一斉防災訓練
+                    </h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        訓練として、<span class="font-bold">午前8時30分</span>に市内全域へ「緊急地震速報」が、8時33分に「大津波警報」がスマホ等に発信されます。マナーモードにしていても鳴る場合がありますので、驚かないようご準備ください。
+                    </p>
+                </div>
+            </div>
+
+            <!-- アコーディオン（南海トラフ地震臨時情報） -->
+            <details class="mt-4 group">
+                <summary class="cursor-pointer bg-white border border-gray-200 text-gray-800 font-bold py-4 px-5 rounded-xl shadow-sm flex justify-between items-center hover:bg-gray-50">
+                    <div class="flex items-center gap-2"><span>⚠️</span> 「南海トラフ地震臨時情報」の備えについて</div>
+                    <span class="text-gray-400 group-open:rotate-180 transition-transform duration-300">▼</span>
+                </summary>
+                <div class="bg-gray-50 border-x border-b border-gray-200 rounded-b-xl p-5 mt-[-10px] pt-6 text-sm text-gray-700 leading-relaxed">
+                    <p class="mb-2">南海トラフ沿いで大規模な地震が発生する可能性が高まった際に、気象庁から<strong>「臨時情報（巨大地震警戒・注意）」</strong>が発表されます。</p>
+                    <ul class="list-disc pl-5 mb-3 space-y-1">
+                        <li>情報が出ても必ず地震が起きるわけではありません。</li>
+                        <li>お店や交通機関はほぼ平常通り動きます。</li>
+                        <li>すぐに逃げ出せる服装で寝る、リュックをそばに置くなど、特別な備えをして生活を続けてください。</li>
+                    </ul>
+                    <p class="text-xs text-red-600 font-bold">※詳細は原本PDFの7〜10ページで必ずご確認ください。</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- セクション4: ファミリー・子育て・夏休み -->
+        <section class="px-4 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 border-b-2 border-gray-100 pb-2">
+                <span>👨‍👩‍👧</span> ファミリー・夏休みのお知らせ
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <!-- ラジオ体操 -->
+                <div class="bg-green-50/50 border border-green-100 rounded-xl p-4 shadow-sm">
+                    <h3 class="font-bold text-gray-900 text-base mb-1 flex items-center gap-1"><span>🤸</span> 夏休みラジオ体操</h3>
+                    <p class="text-xs text-gray-500 mb-1">期間：8/17〜21、24〜28 (土日は休み)</p>
+                    <p class="text-xs text-gray-500 mb-2">時間：朝6:30〜 ＠密柑山公園</p>
+                    <p class="text-sm text-gray-700">子どもから大人まで参加無料。お楽しみ参加賞もあります！</p>
+                </div>
+                
+                <!-- ルーミー -->
+                <div class="bg-cyan-50/50 border border-cyan-100 rounded-xl p-4 shadow-sm">
+                    <h3 class="font-bold text-gray-900 text-base mb-1 flex items-center gap-1"><span>💦</span> ひなっこクラブ「ルーミー」夏祭り</h3>
+                    <p class="text-xs text-gray-500 mb-2">日時：8月19日(水) 10:00〜12:00 ＠ひばり荘</p>
+                    <p class="text-sm text-gray-700">就園前のお子さんと保護者対象。わなげや水遊びを楽しみましょう。（参加無料・予約不要）</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                <h3 class="font-bold text-gray-900 mb-1">トワイライトスクールからのお知らせ</h3>
+                <p class="text-sm text-gray-700 mb-1">
+                    <span class="font-bold text-red-600">8月13日(木)〜16日(日)はお盆休み（活動中止）</span>です。<br>
+                    夏休み中は午前9時〜午後6時の開設となります。
+                </p>
+            </div>
+        </section>
+
+        <!-- セクション5: シニア・健康・地域活動 -->
+        <section class="px-4 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 border-b-2 border-gray-100 pb-2">
+                <span>🍵</span> シニア・健康・くらし
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- お食事会 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                    <h3 class="font-bold text-gray-900 text-base mb-1 flex items-center gap-1"><span>🍱</span> ご高齢者の皆さまへ お食事会のご案内</h3>
+                    <p class="text-sm text-gray-600 mb-2"><span class="font-bold">開催日：</span>10月6日(火) 10:00〜12:30 ＠陽明コミセン</p>
+                    <p class="text-sm text-gray-700 mb-2">
+                        消費生活相談員による「悪質商法被害にあわないために」の講演と、お弁当（会食または持帰り）を楽しめます。参加費500円（定員40名ほど）。
+                    </p>
+                    <p class="text-xs font-bold text-orange-600 bg-orange-50 p-2 rounded">
+                        ※お申し込みは、9月上旬の各サロン（八勝・ゆうゆう等）や長寿会定例会にて先着順で受け付けます。詳細は原本PDF 24ページへ。
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- コスモス -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                        <h3 class="font-bold text-gray-900 text-base mb-1">🌸 コスモス参加者募集</h3>
+                        <p class="text-sm text-gray-700 mb-2">65歳以上対象の「はつらつ長寿推進事業」。週1回の体操や制作でフレイル予防！</p>
+                        <p class="text-xs text-gray-500">申込：8/3〜8/28（無料・半年間）</p>
+                    </div>
+                    
+                    <!-- 福祉スポーツセンター -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+                        <h3 class="font-bold text-gray-900 text-base mb-1">🏢 福祉スポーツセンターから</h3>
+                        <p class="text-sm text-gray-700">
+                            10月1日以降のお支払い分から、体育館等の施設使用料が改定されます。（詳細は原本PDF 27ページ）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション6: 加入案内への導線 -->
+        <section class="px-4 mb-8">
+            <div class="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-200 rounded-2xl p-6 shadow-sm text-center relative overflow-hidden">
+                <div class="absolute -right-4 -bottom-6 text-8xl opacity-10">🤝</div>
+                <h2 class="text-xl font-bold text-orange-800 mb-3 flex items-center justify-center gap-2 relative z-10">
+                    <span>🤝</span> 陽明学区での暮らしを、もっと安心に
+                </h2>
+                <p class="text-base text-gray-700 mb-5 leading-relaxed relative z-10 text-left md:text-center">
+                    マンションや賃貸にお住まいの方、以前から住んでいるけれど未加入の方も大歓迎です。<br>
+                    街の安全や子どもたちの笑顔を支える「共助の輪」に、あなたも加わりませんか？
+                </p>
+                <!-- ルート直下の join.html を指定 -->
+                <a href="../join.html" 
+                   class="block w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 text-lg relative z-10 flex items-center justify-center gap-2">
+                    町内会について詳しく見る <span>▶</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- フッター / アクション導線 -->
+        <footer class="bg-gray-100 p-6 rounded-b-3xl">
+            <h3 class="text-center font-bold text-gray-800 mb-4">この情報を近所の方に教える</h3>
+            
+            <div class="flex flex-col gap-4">
+                <!-- LINEシェアボタン (8月号用の文面) -->
+                <a href="https://line.me/R/msg/text/?陽明学区デジタル回覧板（8月号）が届きました！今月の目玉は「プレミアム商品券」の申込締切(8/14)や、近隣で激増している「空き巣被害」への緊急警告です🚨来月の交通規制情報など重要ニュースが満載ですので、必ずチェックしてください👇%0Ahttps://youmei-gakku.github.io/youmei-digital/2607/index.html" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="block w-full bg-[#06C755] hover:bg-[#05b34c] text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-lg">
+                    <span>💬</span> LINEでご近所さんに送る
+                </a>
+
+                <!-- 原本確認ボタン（ご指定のGoogleドライブリンクを適用） -->
+                <a href="https://drive.google.com/file/d/18eLQWCeNqkBFy7o7GZ7GV-pF3kIyAqub/view?usp=drive_link" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="block w-full bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                    <span>📄</span> 詳しく読みたい方はこちら<br>（回覧板原本PDFを開く）
+                </a>
+
+                <!-- 独自防災情報ページへのリンクボタン -->
+                <a href="https://youmei-gakku.github.io/youmei-digital/bosai" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                    <span>🚨</span> 女性と家族のためのなごやBosaiブック デジタル版を見る
+                </a>
+            </div>
+
+            <p class="text-center text-sm text-gray-500 mt-8">
+                &copy; 令和8年 陽明学区連絡協議会・地域福祉推進協議会
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
