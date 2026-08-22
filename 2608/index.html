@@ -20,7 +20,7 @@
         body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; }
     </style>
 </head>
-<body id="top" class="bg-gray-100 text-gray-800 text-lg leading-relaxed pb-28">
+<body id="top" class="bg-gray-100 text-gray-800 text-lg leading-relaxed pb-20">
 
     <!-- メインコンテナ（スマホ最適化サイズ） -->
     <main class="max-w-2xl mx-auto bg-white min-h-screen shadow-md rounded-b-3xl overflow-hidden relative pb-10">
@@ -53,6 +53,14 @@
         <!-- トップ画像 (同階層の画像リンク) -->
         <div class="mt-4 px-4">
             <img src="./top-image.jpg" alt="二十歳を祝う記念式典 トップ画像" class="w-full h-56 object-cover rounded-2xl shadow-sm bg-orange-50" onerror="this.src='https://placehold.co/800x400/ffedd5/ea580c?text=Yomei+September'">
+        </div>
+
+        <!-- リード文（前文） -->
+        <div class="p-6">
+            <p class="text-gray-700 font-medium">
+                残暑が続いておりますが、皆様いかがお過ごしでしょうか。<br>
+                今月は、令和9年『二十歳を祝う記念式典』で晴れ舞台に立つ<strong class="text-orange-600">新成人代表者</strong>を、新成人の皆さんの中から募集しております。いよいよ開幕するアジア大会の文化プログラム・交通規制情報や、サンライトサロンの秋企画など、見逃せないお知らせが満載です。どうぞ最後までご覧ください。
+            </p>
         </div>
 
         <!-- トップ特集：二十歳を祝う会 -->
@@ -184,8 +192,48 @@
             </div>
         </section>
 
-        <!-- ボトムナビゲーションリンク群 -->
-        <div class="px-4 mt-12 mb-6">
+        <!-- セクション5：アジア大会 交通規制（再掲） -->
+        <section class="px-4 mt-8 mb-10">
+            <div class="bg-red-50 border-2 border-red-300 rounded-2xl p-5 shadow-sm relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">🚧</span>
+                    <h2 class="text-xl font-bold text-red-800 leading-tight">【再掲】アジア大会 交通規制にご注意</h2>
+                </div>
+                <p class="text-red-700 mb-4 text-base font-medium">大会の開閉会式やマラソン当日は、会場周辺で大規模な交通規制や地下鉄の入場制限が行われます。お出かけの際はご注意ください。</p>
+                <div class="bg-white rounded-xl p-4 mb-4 text-base space-y-2 shadow-sm">
+                    <p><strong>🚨 聖火リレー：</strong> 9月16日(水) 16:25〜17:40頃<br><span class="text-sm">コース本線上は一時通行止め（桜山〜瑞穂運動場西）</span></p>
+                    <p><strong>🚨 マラソン：</strong> 9月26日(土) 6:45〜11:20頃<br><span class="text-sm">相当の渋滞が予想されます。自動車の利用はご遠慮を</span></p>
+                    <p><strong>🚨 開閉会式：</strong> 9/19, 10/4, 10/18, 10/24<br><span class="text-sm">会場周辺で夜間の通行止め・駐停車禁止措置あり</span></p>
+                </div>
+                <p class="text-sm text-red-600 font-bold mb-3 px-2">※交通規制は地域の皆様の通行を全面禁止するものではありません。生活道路は引き続き通行可能です。</p>
+                <a href="../2607/asia-games.html" 
+                   class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                    <span>📖</span> 交通規制の詳しい内容と生活防衛ガイドを見る
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター / アクション導線（2607方式） -->
+    <footer class="bg-gray-100 p-6 rounded-b-3xl">
+        <h3 class="text-center font-bold text-gray-800 mb-4">この情報を近所の方に教える</h3>
+        
+        <div class="flex flex-col gap-4">
+            <!-- LINEシェアボタン -->
+            <a href="https://line.me/R/msg/text/?陽明学区デジタル回覧板9月号が公開されました！%0D%0Ahttps://youmei-gakku.github.io/youmei-digital/2608/index.html" 
+               target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-[#06C755] hover:bg-[#05b34c] text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-lg">
+                <span>💬</span> LINEでご近所さんに送る
+            </a>
+
+            <!-- 原本確認ボタン -->
+            <a href="https://drive.google.com/file/d/1Hd9qGhk5Vgm-qQRqdmARC7vnkyrAQ_nB/view?usp=drive_link" 
+               target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                <span>📄</span> 詳しく読みたい方はこちら<br>（回覧板原本PDFを開く）
+            </a>
+
             <!-- 独自防災情報ページへのリンクボタン -->
             <a href="https://youmei-gakku.github.io/youmei-digital/bosai" 
                target="_blank" rel="noopener noreferrer"
@@ -203,20 +251,9 @@
             </a>
         </div>
 
-    </main>
-
-    <!-- フッター（アクション導線）コンテナ幅に合わせた固定配置 -->
-    <footer class="fixed bottom-0 left-0 w-full z-50 pointer-events-none">
-        <div class="max-w-2xl mx-auto bg-white border-t border-gray-200 p-4 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.05)] rounded-t-3xl pointer-events-auto">
-            <div class="flex gap-3">
-                <a href="https://line.me/R/msg/text/?陽明学区デジタル回覧板9月号が公開されました！%0D%0Ahttps://youmei-gakku.github.io/youmei-digital/2608/index.html" target="_blank" rel="noopener noreferrer" class="flex-1 bg-[#06C755] hover:bg-[#05b34c] text-white text-center font-bold py-3 px-2 rounded-xl shadow-sm flex flex-col items-center justify-center transition duration-200">
-                    <span class="flex items-center gap-1 text-sm"><span class="text-lg">💬</span> LINEで教える</span>
-                </a>
-                <a href="https://drive.google.com/file/d/1Hd9qGhk5Vgm-qQRqdmARC7vnkyrAQ_nB/view?usp=drive_link" target="_blank" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-3 px-2 rounded-xl shadow-sm flex flex-col items-center justify-center transition duration-200">
-                    <span class="flex items-center gap-1 text-sm"><span class="text-lg">📄</span> 回覧板原本(PDF)を見る</span>
-                </a>
-            </div>
-        </div>
+        <p class="text-center text-sm text-gray-500 mt-8">
+            &copy; 令和8年 陽明学区連絡協議会・地域福祉推進協議会
+        </p>
     </footer>
 
 </body>
