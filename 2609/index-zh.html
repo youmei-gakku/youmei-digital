@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <!-- 【絶対遵守ルール】検索エンジンインデックス拒否 -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阳明学区 数字传阅板 - 令和8年10月号</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* アコーディオンの矢印アニメーション用 */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        /* シニア層の視認性を高めるためのベース設定 */
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    </style>
+</head>
+<body id="top" class="bg-gray-100 text-gray-800 text-lg leading-relaxed pb-20">
+
+    <!-- メインコンテナ（スマホ最適化サイズ） -->
+    <main class="max-w-2xl mx-auto bg-white min-h-screen shadow-md rounded-b-3xl overflow-hidden relative pb-10">
+        
+        <header class="p-5 pb-0">
+            <!-- 多言語切り替えボタン (日本語へ戻る) -->
+            <div class="flex justify-end mb-3">
+                <a href="./index.html" class="inline-flex items-center gap-1 text-xs font-bold text-gray-500 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-full transition-colors border border-gray-200 shadow-sm active:scale-95">
+                    <span>🇯🇵</span> 日本語
+                </a>
+            </div>
+            
+            <!-- ハッシュタグ（10月号仕様 中文） -->
+            <div class="flex flex-wrap gap-2 mb-3">
+                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-bold shadow-sm">#瑞穗区民祭</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold shadow-sm">#药学祭</span>
+                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-bold shadow-sm">#红羽毛联合募捐</span>
+            </div>
+            <div class="flex justify-between items-end border-b-2 border-orange-200 pb-3">
+                <h1 class="text-2xl font-black text-gray-900 leading-tight">
+                    <span class="text-orange-600 text-base block mb-1">阳明学区 数字传阅板</span>
+                    令和8年(2026年) 10月号
+                </h1>
+                <div class="text-sm font-bold text-gray-500 bg-gray-100 px-3 py-2 rounded-lg flex items-center gap-1">
+                    <span>⏱️</span>约5分钟阅读
+                </div>
+            </div>
+        </header>
+
+        <!-- トップ画像 (同階層の画像リンク) -->
+        <div class="mt-4 px-4">
+            <img src="./top-image.jpg" alt="瑞穗区民祭2026 顶部图片" class="w-full h-56 object-cover rounded-2xl shadow-sm bg-orange-50" onerror="this.src='https://placehold.co/800x400/ffedd5/ea580c?text=Yomei+October'">
+        </div>
+
+        <!-- リード文（前文） -->
+        <div class="p-6">
+            <p class="text-gray-700 font-medium">
+                秋意渐浓，迎来了宜人的季节。大家过得怎么样呢？<br>
+                本期汇集了11月的<strong class="text-orange-600">瑞穗区民祭</strong>、10月的<strong class="text-orange-600">药学祭・阳明跳蚤市场</strong>等秋季活动信息。此外，还包含了10月起的大件垃圾规则变更、恳请大家协助红羽毛联合募捐等与生活息息相关的重要通知。请务必看到最后。
+            </p>
+        </div>
+
+        <!-- トップ特集：瑞穂区民まつり -->
+        <section class="px-4 mt-6">
+            <div class="bg-white rounded-2xl border-2 border-orange-100 p-5 shadow-sm mb-4">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 tracking-tight">瑞穗区民祭 2026</h2>
+                <p class="text-orange-700 font-medium mb-4 text-base">会场是名古屋市博物馆的停车场和前庭。舞台表演、模拟店铺、抽奖会等，请与家人一起享受秋天的美好一天！</p>
+                
+                <div class="bg-orange-50 rounded-xl p-4 mb-5 text-base space-y-2">
+                    <p><strong>【日期】</strong> 11月7日(六) 10:00〜15:00</p>
+                    <p><strong>【会场】</strong> 名古屋市博物馆 停车场・前庭</p>
+                    <p><strong>【交通】</strong> 地铁樱通线「樱山站」4号出口</p>
+                    <p class="text-sm text-gray-600 mt-2">※雨天中止。当天8:00起，可拨打名古屋导览热线（052-953-7584）确认是否举办</p>
+                </div>
+                <p class="text-sm text-red-600 font-bold px-2">参加趣味抽奖会，需要《名古屋宣传报》10月号瑞穗区版16面的「参加券」。</p>
+            </div>
+
+            <!-- トップ特集：薬学祭 -->
+            <div class="bg-white rounded-2xl border-2 border-blue-100 p-5 shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 tracking-tight">第76届 药学祭</h2>
+                <p class="text-blue-700 font-medium mb-4 text-base">在名古屋市立大学田边通校区举办2天。同期还举办「阳明跳蚤市场」！</p>
+                
+                <div class="bg-blue-50 rounded-xl p-4 mb-5 text-base space-y-2">
+                    <p><strong>【日期】</strong> 10月24日(六)・25日(日) 各10:00〜19:00</p>
+                    <p><strong>【会场】</strong> 名古屋市立大学 田边通校区（瑞穗区田边通3-1）</p>
+                    <p><strong>【嘉宾】</strong> 小竹正义感(24日)／Ironhead(25日)</p>
+                    <p class="text-sm text-gray-600 mt-2">※9:30起在各摊位活动发放整理券。无停车场</p>
+                </div>
+
+                <details class="bg-gray-50 rounded-xl p-4 cursor-pointer group">
+                    <summary class="font-bold text-gray-700 flex justify-between items-center outline-none">
+                        🛍️ 第18届 阳明跳蚤市场（同期举办）
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-200 pt-4 space-y-3">
+                        <p><strong>日期：</strong> 10月24日(六) 10:00〜（商品售完即结束）</p>
+                        <p><strong>会场：</strong> 药学祭会场（市大药学系 田边通校区）</p>
+                        <p><strong>主办：</strong> 阳明跳蚤市场事务局・名古屋市立大学药学祭执行委员会</p>
+                        <p class="text-sm text-red-600">※不可使用药学系校园的停车场。</p>
+                        <p class="text-sm text-blue-700 font-bold">同时也在招募出摊商家。详情请参阅传阅板原件。</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- セクション1：暮らしのお知らせ（粗大ごみ・生活道路） -->
+        <section class="px-4 mt-8">
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-5 border border-amber-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">📦</span>
+                    <h2 class="text-xl font-bold text-amber-900 leading-tight">10月起改变的日常生活规则</h2>
+                </div>
+                <p class="text-amber-800 mb-4 text-base">有与生活息息相关的重要变更，请务必确认。</p>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm mb-3 cursor-pointer group">
+                    <summary class="font-bold text-amber-700 flex justify-between items-center outline-none">
+                        🗑️ 大件垃圾的对象与手续费将调整（10/1〜）
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p>从10月1日(四)起，<strong>「装不进45升容量指定垃圾袋的物品」</strong>将成为大件垃圾的对象。能装进指定袋的物品将作为「可燃垃圾」「不可燃垃圾」「塑料资源」收集。</p>
+                        <div class="bg-amber-50 rounded-lg p-3">
+                            <p class="font-bold text-amber-900 mb-1">主要手续费调整</p>
+                            <ul class="list-disc ml-5 space-y-1 text-sm">
+                                <li>衣柜：1,000日元 → 2,500日元</li>
+                                <li>自行车：500日元 → 1,000日元</li>
+                                <li>晾衣架：500日元 → 250日元（降价）</li>
+                                <li>暖风机：1,000日元 → 500日元（降价）</li>
+                            </ul>
+                        </div>
+                        <p class="text-sm text-gray-600">※用胶带封住袋口、套两层袋、袋子破损的，均属于大件垃圾。</p>
+                        <p class="text-sm text-gray-600">申请：大件垃圾受理中心 0120-758-530（周一〜周五 9:00〜17:00，节假日可）</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm cursor-pointer group">
+                    <summary class="font-bold text-amber-700 flex justify-between items-center outline-none">
+                        🚗 生活道路法定时速降至30km（9/1起施行）
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p>没有中央线或中央分离带的「生活道路」，法定时速已从60km/h下调至<strong>30km/h</strong>。</p>
+                        <p class="text-sm text-gray-600">※设有最高时速指示标志的道路，以指示速度为准。</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- セクション2：防災 -->
+        <section class="px-4 mt-8">
+            <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-5 border border-slate-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">🌊</span>
+                    <h2 class="text-xl font-bold text-slate-800 leading-tight">在南海海槽地震中生存<br>〜提高瑞穗区的防灾能力〜</h2>
+                </div>
+                <p class="text-slate-700 mb-4 text-base">发生间隔约为100〜150年。距上次已过去80多年。现在正是做好准备的时候。</p>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm mb-3 cursor-pointer group">
+                    <summary class="font-bold text-slate-700 flex justify-between items-center outline-none">
+                        📊 名古屋市・瑞穗区的灾害预想
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p class="font-bold text-slate-800">名古屋市的灾害预想（最大级别）</p>
+                        <ul class="list-disc ml-5 space-y-1">
+                            <li>死亡人数：最多6,700人</li>
+                            <li>建筑物全毁・烧毁：约66,000栋</li>
+                        </ul>
+                        <p class="font-bold text-slate-800 mt-2">瑞穗区的晃动</p>
+                        <p>根据灾害预测地图，大部分地区为震度6弱以上，<strong class="text-red-600">区西部预计震度6强</strong>。<strong class="text-red-600">阳明学区预计为震度6弱</strong>。山崎川西侧及天白川周边是液化危险性较高的地区。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm cursor-pointer group">
+                    <summary class="font-bold text-slate-700 flex justify-between items-center outline-none">
+                        🛡️ 现在就能做的准备
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p><strong>物资储备：</strong> 实践滚动储备（用掉的及时补购，始终保持稍多一点）。</p>
+                        <p><strong>家具防倾倒：</strong> 阪神・淡路大地震约8成遇难者死于房屋倒塌或家具倾倒导致的压埋、窒息。请固定家具并重新考虑摆放位置。</p>
+                        <p><strong>自助与互助：</strong> 被埋或被困时的救助，自力34.9%、家人31.9%、朋友邻居28.1%，而救援队仅1.7%。邻里互助能救命。</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- セクション3：防犯 -->
+        <section class="px-4 mt-8">
+            <div class="bg-red-50 border-2 border-red-300 rounded-2xl p-5 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">🚨</span>
+                    <h2 class="text-xl font-bold text-red-800 leading-tight">【重要】防范犯罪通知</h2>
+                </div>
+                <p class="text-red-700 mb-4 text-base font-medium">来自阳明派出所通讯・瑞穗警察署的信息。请注意。</p>
+
+                <div class="bg-white rounded-xl p-4 mb-3 text-base shadow-sm border-l-4 border-red-500">
+                    <p class="font-bold text-red-700 mb-2">🏠 阳明学区入室盗窃多发</p>
+                    <p class="text-gray-700">瑞穗区内共发生11起入室盗窃，其中<strong class="text-red-600">超过半数6起发生在阳明学区</strong>。无论是否在家，请务必锁好门窗。</p>
+                </div>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm mb-3 cursor-pointer group">
+                    <summary class="font-bold text-red-600 flex justify-between items-center outline-none">
+                        📞 谨防退税诈骗・特殊诈骗
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p>假冒区政府职员、以退税名义进行的可疑电话多发。爱知县内退税诈骗已发生<strong>379件（同比+215件）</strong>，受害总额约达10亿8,639万日元。</p>
+                        <ul class="list-disc ml-5 space-y-1">
+                            <li>电话中提及「医疗费」「退税」「钱会退回来」时，应怀疑是诈骗</li>
+                            <li>政府机关绝不会指示操作ATM</li>
+                            <li>请利用来电答录设置或带防骗功能的电话机</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm cursor-pointer group">
+                    <summary class="font-bold text-red-600 flex justify-between items-center outline-none">
+                        🔒 空宅盗窃・地下兼职对策
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p class="font-bold text-gray-800">严加防范空宅盗窃</p>
+                        <ul class="list-disc ml-5 space-y-1">
+                            <li>务必锁好门窗</li>
+                            <li>警惕从2楼或公寓低层阳台侵入</li>
+                            <li>活用雨窗、卷帘、防盗摄像头、可视门铃</li>
+                            <li>家中不要存放大量现金或贵重物品</li>
+                        </ul>
+                        <p class="font-bold text-gray-800 mt-2">不要让地下兼职毁掉人生</p>
+                        <p>即使是望风、仅仅是介绍也算同罪，会被逮捕。即使是前辈或朋友邀请也不可答应。出售银行账户、手机属于犯罪。</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- セクション4：イベント（ふれあいフェスタ） -->
+        <section class="px-4 mt-8">
+            <div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-5 border border-pink-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">🎈</span>
+                    <h2 class="text-xl font-bold text-pink-900 leading-tight">第2届 交流节 in 密柑山</h2>
+                </div>
+                <p class="text-pink-800 mb-4 text-base">免费入场。适合全家同乐的活动丰富多彩。</p>
+                <div class="bg-white rounded-xl p-4 text-base space-y-2 shadow-sm">
+                    <p><strong>【日期】</strong> 10月31日(六) 10:00〜13:00（免费入场）</p>
+                    <p><strong>【会场】</strong> 名古屋市立大学医学部附属康复医院 1F 福祉运动中心体育馆</p>
+                    <p><strong>【同期举办】</strong> 市民公开讲座 13:00〜14:00（同会场）</p>
+                    <p class="text-sm text-gray-600 mt-2">自制沙拉酱、拍照、气球艺术、职业体验、糖果赠送等</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション5：シニア・福祉 -->
+        <section class="px-4 mt-8">
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-5 border border-green-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">🍵</span>
+                    <h2 class="text-xl font-bold text-green-900 leading-tight">老年・福祉通知</h2>
+                </div>
+                <p class="text-green-800 mb-4 text-base">阳明福祉的活动安排与便利的上门窗口介绍。</p>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm mb-3 cursor-pointer group">
+                    <summary class="font-bold text-green-700 flex justify-between items-center outline-none">
+                        🗓️ 阳明福祉 活动安排（10月〜）
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p><strong>老年人餐会：</strong> 社区中心大会议室 10月6日(二)等</p>
+                        <p><strong>Sunlight沙龙（散步会）：</strong> 10月8日(四) 竹岛水族馆・午餐・温泉</p>
+                        <p><strong>各沙龙：</strong> 善进寺・八胜・正及・田边樱・松荣・菜园・二叶盒咖啡 等</p>
+                        <p class="text-sm text-red-600 mt-2">※老年人餐会、Sunlight沙龙需提前报名。</p>
+                        <p class="text-sm text-gray-600">※学区外或未加入町内会者，敬请协助缴纳赞助会费（每年1,000日元）。</p>
+                        <p class="text-sm font-bold text-green-700">报名・咨询：080-2071-4844</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-xl p-4 shadow-sm cursor-pointer group">
+                    <summary class="font-bold text-green-700 flex justify-between items-center outline-none">
+                        💳 个人编号卡 上门窗口（10/17）
+                        <span class="text-xl group-open:rotate-180 transition-transform">🔽</span>
+                    </summary>
+                    <div class="mt-4 text-base text-gray-700 border-t border-gray-100 pt-4 space-y-3">
+                        <p><strong>日期：</strong> 10月17日(六) 11:00〜17:00（无预约也可，提前预约优先）</p>
+                        <p><strong>会场：</strong> 阳明社区中心 1F 和室</p>
+                        <p class="text-sm text-gray-600">对象为：想申请个人编号卡但不清楚手续的人、有效期临近想申请更新的人。对象需在名古屋市有居民登记（首次申请、有效期不足3个月的更新、持交付通知书者）。遗失补发・仅电子证明书不在对象范围内。</p>
+                        <p class="text-sm font-bold text-green-700">预约・咨询：050-3612-8553</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- セクション6：赤い羽根共同募金 -->
+        <section class="px-4 mt-8 mb-10">
+            <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-5 border-2 border-red-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-4xl">🪶</span>
+                    <h2 class="text-xl font-bold text-red-800 leading-tight">恳请协助红羽毛联合募捐</h2>
+                </div>
+                <p class="text-red-800 mb-4 text-base font-medium">让我们的街道变得更好的机制。恳请协助。</p>
+                <div class="bg-white rounded-xl p-4 text-base space-y-2 shadow-sm">
+                    <p><strong>【期间】</strong> 2026年10月1日〜12月31日</p>
+                    <p><strong>【分配】</strong> 约3成用于爱知县内的社会福利设施整备及灾害支援等，约7成用于让瑞穗区变得更好的活动。</p>
+                    <p class="font-bold text-red-700">募捐袋与红羽毛正在传阅中。恳请协助。</p>
+                    <p class="text-sm text-gray-600 mt-2">除上门募捐外，也欢迎参加区民祭、商业设施内的募捐活动，或使用红羽毛捐赠型自动售货机。</p>
+                    <p class="text-sm font-bold text-red-700">咨询：名古屋市瑞穗区联合募捐委员会（瑞穗区社会福利协议会内）052-841-4063</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ボトムナビゲーションリンク群 -->
+        <div class="px-4 mt-12 mb-6">
+            <!-- 独自防災情報ページへのリンクボタン -->
+            <a href="https://youmei-gakku.github.io/youmei-digital/bosai" 
+               target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                <span>🚨</span> 查看《女性与家庭的名古屋Bosai(防灾)手册》数字版
+            </a>
+            
+            <!-- ポータル（表紙）画面へのリンクボタン -->
+            <a href="../index.html" 
+               class="block w-full bg-white border-2 border-green-600 hover:bg-green-50 text-green-700 text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex flex-col items-center justify-center gap-1 mt-4">
+                <div class="flex items-center gap-2 text-base">
+                    <span>🏠</span> 返回可随时阅读最新一期的首页
+                </div>
+                <span class="text-xs text-green-600 font-normal">※请从这里添加书签或保存到主屏幕！</span>
+            </a>
+        </div>
+
+        <!-- トップへ戻るボタン -->
+        <div class="px-4 mt-4 text-center">
+            <a href="#top" class="inline-flex flex-col items-center justify-center text-gray-400 hover:text-orange-600 transition-colors">
+                <span class="bg-white rounded-full p-3 shadow-sm mb-1 border border-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                    </svg>
+                </span>
+                <span class="text-sm font-bold">返回顶部</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- フッター / アクション導線（2607方式） -->
+    <footer class="bg-gray-100 p-6 rounded-b-3xl">
+        <h3 class="text-center font-bold text-gray-800 mb-4">把这则信息告诉邻居</h3>
+        
+        <div class="flex flex-col gap-4">
+            <!-- LINEシェアボタン -->
+            <a href="https://line.me/R/msg/text/?阳明学区数字传阅板10月号已公开！%0D%0Ahttps://youmei-gakku.github.io/youmei-digital/2609/index-zh.html" 
+               target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-[#06C755] hover:bg-[#05b34c] text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-lg">
+                <span>💬</span> 用LINE发给邻居
+            </a>
+
+            <!-- 原本確認ボタン -->
+            <a href="https://drive.google.com/file/d/1nTm_bJ-KyfSMtpMkOJT8PhIUQ0tRCEca/view?usp=drive_link" 
+               target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                <span>📄</span> 想详细了解请点击这里<br>（打开传阅板原件PDF）
+            </a>
+
+            <!-- 独自防災情報ページへのリンクボタン -->
+            <a href="https://youmei-gakku.github.io/youmei-digital/bosai" 
+               target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2 text-base">
+                <span>🚨</span> 查看《女性与家庭的名古屋Bosai(防灾)手册》数字版
+            </a>
+            
+            <!-- ポータル（表紙）画面へのリンクボタン -->
+            <a href="../index.html" 
+               class="block w-full bg-white border-2 border-green-600 hover:bg-green-50 text-green-700 text-center font-bold py-4 px-6 rounded-xl shadow-sm transition-transform active:scale-95 flex flex-col items-center justify-center gap-1 mt-4">
+                <div class="flex items-center gap-2 text-base">
+                    <span>🏠</span> 返回可随时阅读最新一期的首页
+                </div>
+                <span class="text-xs text-green-600 font-normal">※请从这里添加书签或保存到主屏幕！</span>
+            </a>
+        </div>
+
+        <p class="text-center text-sm text-gray-500 mt-8">
+            &copy; 令和8年 阳明学区联络协议会・地域福祉推进协议会
+        </p>
+    </footer>
+
+</body>
+</html>
